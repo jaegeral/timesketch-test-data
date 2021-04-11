@@ -73,6 +73,12 @@ ERROR:timesketch.lib.sigma:Error generating rule in file /etc/timesketch/data/si
 Running analyzer produces the following errors with rules:
 
 ```
+/rules/windows/sysmon/sysmon_suspicious_remote_thread.yml
+/rules/windows/sysmon/sysmon_apt_turla_namedpipes.yml
+/rules/windows/powershell/powershell_invoke_obfuscation_via_var%2B%2B.yml
+```
+
+```
 Problematic rules:
 * powershell_invoke_obfuscation_via_var++.yml
 * sysmon_apt_turla_namedpipes.yml
