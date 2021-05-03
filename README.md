@@ -16,7 +16,7 @@ brew install coreutils
 ```
 
 then
- 
+
 ```bash
 git clone
 https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES
@@ -24,7 +24,7 @@ https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES
 
 Then run the following script:
 
-```
+```bash
 #!/bin/bash
 find ./EVTX-ATTACK-SAMPLES/ -name "* *" -type d | rename 's/ /_/g'
 for file in $(find ./EVTX-ATTACK-SAMPLES/ -type f -name "*.evtx"); do
@@ -41,3 +41,10 @@ for file in $(find ./EVTX-ATTACK-SAMPLES/ -type f -name "*.evtx"); do
     fi
 done
 ```
+
+To get the data in timesketch:
+
+```
+cp -r ./timesketch-test-data /tmp
+```
+
