@@ -1,8 +1,16 @@
 # timesketch-test-data
 
-Various plaso files to test timesketch
+Various plaso files to test timesketch.
+
+Just clone the repo to have a good set of already parsed plaso files to test your forensik pipeline.
 
 Licenses: Please see the license in the corresponding folders.
+
+## Contributing
+
+If you want to contribute, either open an issue pointing to relevant raw data that can be processed and added to this repo.
+
+The other thing is if you have already processed data, please make a PR and indicate where the source image is located.
 
 ## EVTX files from sbousseaden
 
