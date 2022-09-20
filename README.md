@@ -12,6 +12,51 @@ If you want to contribute, either open an issue pointing to relevant raw data th
 
 The other thing is if you have already processed data, please make a PR and indicate where the source image is located.
 
+## Plaso version used
+
+```
+/data/timesketch-test-data/EVTX-ATTACK-SAMPLES-plaso/EVTX-ATTACK-SAMPLES# pinfo.py UACME_59_Sysmon.evtx.plaso
+
+************************** Plaso Storage Information ***************************
+            Filename : UACME_59_Sysmon.evtx.plaso
+      Format version : 20220716
+Serialization format : json
+--------------------------------------------------------------------------------
+
+*********************************** Sessions ***********************************
+d3bd298a-a641-4d1d-9816-332eb5d786b0 : 2022-09-20T12:07:57.771744+00:00
+--------------------------------------------------------------------------------
+
+******************************** Event sources *********************************
+Total : 1
+--------------------------------------------------------------------------------
+
+************************* Events generated per parser **************************
+Parser (plugin) name : Number of events
+--------------------------------------------------------------------------------
+            filestat : 3
+             winevtx : 64
+               Total : 67
+--------------------------------------------------------------------------------
+
+No events labels stored.
+
+******************** Recovery warnings generated per parser ********************
+Parser (plugin) name : Number of warnings
+--------------------------------------------------------------------------------
+             winevtx : 4
+--------------------------------------------------------------------------------
+
+*************** Path specifications with most recovery warnings ****************
+Number of warnings : Pathspec
+--------------------------------------------------------------------------------
+                 4 : type: OS, location:
+                     /data/EVTX-ATTACK-SAMPLES/UACME_59_Sysmon.evtx
+--------------------------------------------------------------------------------
+
+No analysis reports stored.
+```
+
 ## EVTX files from sbousseaden
 
 To update the evtx files from sbousseaden and parse them with plaso:
