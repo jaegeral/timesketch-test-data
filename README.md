@@ -6,11 +6,29 @@ Just clone the repo to have a good set of already parsed plaso files to test you
 
 Licenses: Please see the license in the corresponding folders.
 
+## Downloading
+
+Some Plaso files are directly in the folder structure. Because of the size of some, they are stored in the releases section:
+https://github.com/jaegeral/timesketch-test-data/releases/tag/main
+
 ## Contributing
 
 If you want to contribute, either open an issue pointing to relevant raw data that can be processed and added to this repo.
 
 The other thing is if you have already processed data, please make a PR and indicate where the source image is located.
+
+## Updating plaso files
+
+### Stolen_Szechuan_Sauce
+
+- Download newest files to: `timesketch-test-data/Stolen_Szechuan_Sauce/images`
+- `sudo docker run -v ~/:/data log2timeline/plaso log2timeline --partition all --storage-file /data/dev/timesketch-test-data/Stolen_Szechuan_Sauce/20200918_0417_DESKTOP-SDN1RPT.plaso /data/dev/timesketch-test-data/Stolen_Szechuan_Sauce/images/20200918_0417_DESKTOP-SDN1RPT/20200918_0417_DESKTOP-SDN1RPT.E01`
+- ` sudo docker run -v ~/:/data log2timeline/plaso log2timeline --partition all --storage-file /data/dev/timesketch-test-data/circl/circl-dfir.plaso /data/dev/timesketch-test-data/circl/images/circl-dfir.dd`
+
+### CIRCL
+- Download file from https://www.circl.lu/services/forensic-training-materials/
+- `sudo docker run -v ~/:/data log2timeline/plaso log2timeline --partition all --storage-file /data/dev/timesketch-test-data/Stolen_Szechuan_Sauce/20200918_0417_DESKTOP-SDN1RPT.plaso /data/dev/timesketch-test-data/Stolen_Szechuan_Sauce/images/20200918_0417_DESKTOP-SDN1RPT/20200918_0417_DESKTOP-SDN1RPT.E01
+
 
 ## Plaso version used
 
