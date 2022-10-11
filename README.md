@@ -119,3 +119,6 @@ To get the data in timesketch:
 cp -r ./timesketch-test-data /tmp
 ```
 
+# Other valuable data
+
+https://github.com/OTRF/Security-Datasets
