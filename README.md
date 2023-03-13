@@ -33,16 +33,16 @@ The other thing is if you have already processed data, please make a PR and indi
 ## Plaso version used
 
 ```
-/data/timesketch-test-data/EVTX-ATTACK-SAMPLES-plaso/EVTX-ATTACK-SAMPLES# pinfo.py UACME_59_Sysmon.evtx.plaso
+sudo docker run -v ~/:/data log2timeline/plaso pinfo.py /data/dev/EVTX-ATTACK-SAMPLES-plaso/EVTX-ATTACK-SAMPLES/UACME_59_Sysmon.evtx.plaso
 
 ************************** Plaso Storage Information ***************************
             Filename : UACME_59_Sysmon.evtx.plaso
-      Format version : 20220716
+      Format version : 20230107
 Serialization format : json
 --------------------------------------------------------------------------------
 
 *********************************** Sessions ***********************************
-d3bd298a-a641-4d1d-9816-332eb5d786b0 : 2022-09-20T12:07:57.771744+00:00
+c1b22072-ac3a-49fe-b44c-4d9be561ac60 : 2023-03-13T12:22:46.063963+00:00
 --------------------------------------------------------------------------------
 
 ******************************** Event sources *********************************
@@ -53,8 +53,8 @@ Total : 1
 Parser (plugin) name : Number of events
 --------------------------------------------------------------------------------
             filestat : 3
-             winevtx : 64
-               Total : 67
+             winevtx : 62
+               Total : 65
 --------------------------------------------------------------------------------
 
 No events labels stored.
